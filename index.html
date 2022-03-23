@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Site</title>
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- custom utilities css -->
+    <link rel = "stylesheet" href = "css/utilities.css">
+    <!-- custom main css -->
+    <link rel = "stylesheet" href = "css/main.css">
+</head>
+<body>
+
+    <div class = "holder">
+        <!-- navbar -->
+        <nav class = "navbar bg-brown flex">
+            <div class = "container flex">
+                <div class = "toggler-and-category bg-brown text-white flex">
+                    <button type = "button" class = "btn navbar-show-btn text-white">
+                        <i class = "fas fa-bars"></i>
+                    </button>
+                    <div class = "category-list">
+                        <span>Категории</span>
+                        <button type = "button" class = "btn category-toggler-btn text-white">
+                            <i class = "fas fa-circle-arrow-down"></i>
+                        </button>
+                    </div>
+
+                    <!-- side navbar -->
+                    <ul id = "side-navbar" class = "bg-white text-uppercase">
+                        <button type = "button" class = "btn navbar-hide-btn text-dark">
+                            <i class = "fas fa-times"></i>
+                        </button>
+                        <li><a href = "#">Домой</a></li>
+                        <li><a href = "#">Лучшие</a></li>
+                        <li><a href = "#">Блог</a></li>
+                        <li><a href = "#">Купить</a></li>
+                        <li><a href = "#">Наши партнеры</a></li>
+                        <li><a href = "#">Контакты</a></li>
+                    </ul>
+                    <!-- end of side navbar -->
+
+                    <ul id = "category-list-items" class = "bg-white">
+                        <li><a href = "#">Маленькие мебели</a></li>
+                        <li><a href = "#">Тумбочки</a></li>
+                        <li><a href = "#">Комоды</a></li>
+                        <li><a href = "#">Книжный шкаф</a></li>
+                        <li><a href = "#">Журнальные столики</a></li>
+                        <li><a href = "#">Матрасы</a></li>
+                        <li><a href = "#">Диваны</a></li>
+                        <li><a href = "#">Стулья</a></li>
+                        <li><a href = "#">Деревянные изделья</a></li>
+                        <li><a href = "#">Мебельные магазины</a></li>
+                    </ul>
+                </div>
+
+                <!-- main navigation list -->
+                <div class = "navbar-collapse flex">
+                    <!-- nav list -->
+                    <ul class = "navbar-nav text-uppercase">
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link active-link">
+                                <span class = "nav-link-text">Домой</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">Лучшие</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">Купить</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">Блог</span>
+                                <span class = "dropdown-icon">
+                                    <i class = "fas fa-chevron-down"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">Проверенные</span>
+                            </a>
+                        </li>
+                        <li class = "nav-item">
+                            <a href = "#" class = "nav-link">
+                                <span class = "nav-link-text">Контакты</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- end of nav list -->
+
+                    <!-- account icons -->
+                    <div class = "account-info">
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-person"></i>
+                        </a>
+                        <a href = "#" class = "btn text-white">
+                            <i class = "fas fa-shopping-basket"></i>
+                        </a>
+                    </div>
+                    <!-- end of account icons -->
+                </div>
+                <!-- end of main navigation list -->
+            </div>
+        </nav>
+        <!-- end of navbar -->
+
+        <!-- header -->
+        <header class = "header bg-light-brown flex" id = "home">
+            <div class = "container">
+                <div class = "header-content grid text-center">
+                    <div class = "header-left">
+                        <h1>Лучший дизайн коллекции мебели</h1>
+                        <p class = "text">Компания BEST decor  - это уникальные мультибрендовые шоурумы в Центральной Азии. В ассортименте все для производства мебели -  ЛДСП И МДФ, мебельная фурнитура и мебельные ручки, мойки из искусственного камня и ортопедические матрасы, а также готовые кухонные фасады, декоративные элементы, механизмы для шкафов-купе и многое другое.</p>
+                        <a href = "#" class = "btn-header text-white bg-brown">Купить сейчас</a>
+                    </div>
+
+                    <div class = "header-right">
+                        <img src = "images/header-sofa-img.png">
+                    </div>
+                    <img src = "images/header-shape.png" class = "header-shape">
+                </div>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- main content -->
+        <main>
+            <!-- top new products section -->
+            <section id = "new-products" class = "new-products py bg-light-grey-color-shade">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>лучшие новинки</h2>
+                        <p class = "lead">Все для вашего удобства</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "new-products-content grid">
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "images/new_product_img_1.png" alt = "">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 отзывов)</span>
+                                </div>
+                                <p class = "name">Дизайн для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "images/new_product_img_2.png" alt = "">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 отзывов)</span>
+                                </div>
+                                <p class = "name">Дизайн для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "images/new_product_img_3.png" alt = "">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 отзывов)</span>
+                                </div>
+                                <p class = "name">Дизайн для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "new-product-item">
+                            <div class = "image">
+                                <img src = "images/new_product_img_4.png" alt = "">
+                                <span class = "badge bg-brown text-white text-center text-uppercase">sale</span>
+                            </div>
+                            <div class = "info">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <span>(10 отзывов)</span>
+                                </div>
+                                <p class = "name">Дизайн для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of top new products section -->
+
+            <!-- category section -->
+            <section class = "category py bg-light-brown" id = "category">
+                <div class = "container">
+                    <div class = "category-content grid">
+                        <div class = "category-item">
+                            <img src = "images/category_img_1.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор диванов</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "images/category_img_2.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор диванов</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "images/category_img_3.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор диванов</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "images/category_img_4.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор диванов</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "images/category_img_5.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор дивановt</div>
+                        </div>
+                        <div class = "category-item">
+                            <img src = "images/category_img_6.png">
+                            <div class = "category-badge bg-white text-dark flex">Набор диванов</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of category section -->
+
+            <!-- featured deals section -->
+            <section class = "featured-deals bg-light-grey-color-shade py" id = "featured-deals">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>избранные предложения</h2>
+                        <p class = "lead">Только на качество</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "featured-deals-content grid">
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "images/featured_deals_img_1.png">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Декор для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "images/featured_deals_img_2.png">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Декор для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "images/featured_deals_img_3.png">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Декор для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "featured-deals-item">
+                            <div class = "image">
+                                <img src = "images/featured_deals_img_4.png">
+                            </div>
+                            <div class = "info bg-white">
+                                <div class = "ratings text-grey">
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-brown"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                    <i class = "fas fa-star text-light-grey"></i>
+                                </div>
+                                <p class = "name">Декор для гостиной</p>
+                                <div class = "price">
+                                    <span class = "old text-grey">$ 50.00</span>
+                                    <span class = "new text-brown">$ 35.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end of featured deals section -->
+
+            <!-- catalog section -->
+            <section class = "catalog bg-brown" id = "catalog">
+                <div class = "catalog-content grid text-center">
+                    <div class = "catalog-left"></div>
+                    <div class = "catalog-right text-white flex py">
+                        <div class = "section-title">
+                            <h2>современные жилые помещения</h2>
+                        </div>
+                        <p class = "text">Тот дом хорош, где хороши обитатели.</p>
+                        <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, sequi distinctio corporis pariatur excepturi minima!</p>
+                    </div>
+                </div>
+            </section>
+            <!-- end of catalog section -->
+
+            <!-- latest news section -->
+            <section class = "latest-news bg-light-grey-color-shade py" id = "latest-news">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>последние новости</h2>
+                        <p class = "lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "latest-news-content grid">
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "images/latest_news_img_1.png">
+                                <div class = "author">
+                                    <img src = "images/author-1.jpg">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Опубликовано 14 марта 2022 г.</span>
+                                <h3 class = "title text-uppercase">
+                                    недорогие бюджетные гостиничные номера</h3>
+                                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, veritatis <span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">читать дальше</a>
+                            </div>
+                        </article>
+
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "images/latest_news_img_2.png">
+                                <div class = "author">
+                                    <img src = "images/author-2.jpg">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Опубликовано 14 марта 2022 г.</span>
+                                <h3 class = "title text-uppercase">недорогие бюджетные гостиничные номера</h3>
+                                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, veritatis <span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">читать дальше</a>
+                            </div>
+                        </article>
+
+                        <article class = "latest-news-item bg-white">
+                            <div class = "top">
+                                <img src = "images/latest_news_img_3.png">
+                                <div class = "author">
+                                    <img src = "images/author-3.jpg">
+                                </div>
+                            </div>
+                            <div class = "body">
+                                <span class = "date">Опубликовано 14 марта 2022 г.></div></span>
+                                <h3 class = "title text-uppercase">недорогие бюджетные гостиничные номер</h3>
+                                <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, veritatis <span>...</span></p>
+                            </div>
+                            <div class = "bottom"k>
+                                <a href = "#" class = "text-uppercase">читать дальше</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- end of latest news section -->
+
+            <!-- feedback section -->
+            <section class = "feedback py bg-light-grey-color-shade" id = "feedback">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Обратная связь</h2>
+                        <p class = "lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "feedback-inner">
+                        <div class = "feedback-container grid">
+                            <div class = "feedback-item bg-white text-center" data-id = "1">
+                                <img src = "images/quote-icon-dark.png" class = "quote-icon">
+                                <p class = "text text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis delectus, eaque consectetur ullam rerum?</p>
+                                <div class = "client">
+                                    <img src = "images/client-1.jpg">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "2" id = "feedback-display">
+                                <img src = "images/quote-icon.png" class = "quote-icon">
+                                <p class = "text text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis delectus, eaque consectetur ullam rerum?</p>
+                                <div class = "client">
+                                    <img src = "images/client-2.jpg">
+                                </div>
+                            </div>
+
+                            <div class = "feedback-item bg-white text-center" data-id = "3">
+                                <img src = "images/quote-icon-dark.png" class = "quote-icon">
+                                <p class = "text text-grey">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea corporis delectus, eaque consectetur ullam rerum?</p>
+                                <div class = "client">
+                                    <img src = "images/client-3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "feedback-btns flex">
+                        <button class = "feedback-btn feedback-active-btn"></button>
+                        <button class = "feedback-btn"></button>
+                        <button class = "feedback-btn"></button>
+                    </div>
+                </div>
+            </section>
+            <!-- end of feedback section -->
+
+            <!-- newsletter section -->
+            <section class = "newsletter py bg-light-grey-color-shade" id = "newsletter">
+                <div class = "container">
+                    <div class = "section-title text-center">
+                        <h2>Новостная рассылка</h2>
+                        
+                        <p class = "lead">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class = "line"></div>
+                    </div>
+
+                    <div class = "newsletter-content">
+                        <form>
+                            <div class = "input-group flex">
+                                <input type = "email" class = "form-control bg-light-grey">
+                                <button type = "submit" class = "btn bg-dark text-white text-uppercase">subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- end of newsletter section -->
+        </main>
+        <!-- end of main content -->
+
+        <!-- footer -->
+        <footer class = "footer bg-light-brown" id = "footer">
+            <div class = "container">
+                <div class = "footer-content py grid text-center">
+                    <div class = "footer-item">
+                        <h3>Мебель.ру</h3>
+                        <p class = "text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam dolorem consequuntur saepe tenetur deserunt harum error quae sint voluptas sunt, autem, totam amet officiis nesciunt eos cupiditate ipsa!</p>
+                        <ul class = "social-links flex">
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-instagram"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href = "#" class = "flex"><i class = "fab fa-pinterest"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Связаться с нами</h3>
+                        <p class = "text">город:Бишкек ул.Боконбаева</p>
+                        <p class = "text">Тел: +996773920284</p>
+                        <p class = "text">Email: info@furnish.com</p>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Недавний пост</h3>
+                        <ul>
+                            <li class = "text"><a href = "#">Пакет отделки помещений</a></li>
+                            <li class = "text"><a href = "#">столовые материалы</a></li>
+                            <li class = "text"><a href = "#">Мебель для мероприятий</a></li>
+                        </ul>
+                    </div>
+
+                    <div class = "footer-item">
+                        <h3>Наше портфолио</h3>
+                        <ul>
+                            <li class = "text"><a href = "#">Дизайн ЕАСТ</a></li>
+                            <li class = "text"><a href = "#">Украшение зала графства</a></li>
+                            <li class = "text"><a href = "#">СОО Конференция</a></li>
+                            <li class = "text"><a href = "#">Лос-Анджелес События</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "footer-end bg-dark">
+                <div class = "container grid">
+                
+                    <div class = "flex payment">
+                        <img src = "images/pay_1.png">
+                        <img src = "images/pay_2.png">
+                        <img src = "images/pay_3.png">
+                        <img src = "images/pay_4.png">
+                        <img src = "images/pay_5.png">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+    </div>
+    
+
+
+
+
+    <!-- custom js -->
+    <script src = "js/script.js"></script>
+</body>
+</html>
